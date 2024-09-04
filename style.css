@@ -19,5 +19,18 @@ header {
 aside {
     float: left;
     width: 30%;
+    padding-top: 2rem;
     border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+aside img {
+    width: 80%;
+    border-radius: 50%;
+    height: auto;
+    
 }
