@@ -11,22 +11,29 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1, p {
+h1, p, a , nav{
     background-color: transparent;
 }
 
 header {
-    background-color: #15181d;
-    border-bottom: 1px solid #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
     text-align: center;
     color: #ffffff;
 }
 
 aside {
     float: left;
-    width: 30%;
-    padding-top: 2rem;
+    width: 25%;
+    padding: 1rem;
     border-right: 1px solid #30363d;
     background-color: #161b22;
     display: flex;
@@ -35,11 +42,12 @@ aside {
     height: 100vh;
 }
 
-aside img {
-    width: 80%;
+.foto-perfil {
+    width: 60%;
+    border: 1px solid #3f454b;
     border-radius: 50%;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
