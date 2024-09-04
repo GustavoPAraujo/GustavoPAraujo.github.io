@@ -57,6 +57,14 @@ aside p, aside a {
     margin-bottom: 1rem;
 }
 
+.foto-perfil {
+    width: 60%;
+    border: 1px solid #3f454b;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
 .nome {
     text-align: center;
     margin-bottom: 1rem;
@@ -72,38 +80,22 @@ aside p, aside a {
     gap: 1rem;
     background-color: transparent;
 }
+.sociais a {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0.5rem;
+}
 
-.foto-perfil {
-    width: 60%;
-    border: 1px solid #3f454b;
+.sociais a img {
+    width: 25px;
+    height: auto;
     border-radius: 50%;
-    height: auto;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
 }
 
-.foto-linkedin {
-    width: 20%;
-    max-width: 25px;
-    max-height: auto;
-    border-radius: 50%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-.foto-github {
-    width: 20%;
-    max-width: 25px;
-    max-height: auto;
-    height: auto;
-    margin-bottom: 1rem;
-}
-.foto-whatsapp {
-    width: 20%;
-    max-width: 25px;
-    max-height: auto;
-    height: auto;
-    margin-bottom: 1rem;
+.sociais a img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 main {
