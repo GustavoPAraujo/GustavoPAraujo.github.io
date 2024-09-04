@@ -51,6 +51,28 @@ aside {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.foto-linkedin {
+    width: 20%;
+    max-width: 25px;
+    max-height: auto;
+    border: 1px solid #3f454b;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.foto-github {
+    width: 20%;
+    max-width: 25px;
+    max-height: auto;
+    border: 1px solid #3f454b;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
 main {
     float: left;
     width: 70%;
