@@ -114,6 +114,25 @@ main {
     width: 70%;
     padding: 2rem;
     background-color: #0d1117;
-    color: #c9d1d9;
+    color: #e1e1e1;
 }
 
+.sobre-mim {
+    margin-bottom: 2rem;
+}
+
+.habilidades {
+    margin-bottom: 2rem;
+}
+
+.projetos {
+    margin-bottom: 2rem;
+}
+
+.experiencia {
+    margin-bottom: 2rem;
+}
+
+.educacao {
+    margin-bottom: 2rem;
+}
