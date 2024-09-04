@@ -11,7 +11,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1, p, a , nav{
+h1,
+p,
+a,
+nav {
     background-color: transparent;
 }
 
@@ -42,6 +45,22 @@ aside {
     height: 100vh;
 }
 
+.nome {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    background-color: transparent;
+}
+
 .foto-perfil {
     width: 60%;
     border: 1px solid #3f454b;
@@ -55,28 +74,31 @@ aside {
     width: 20%;
     max-width: 25px;
     max-height: auto;
-    border: 1px solid #3f454b;
     border-radius: 50%;
     height: auto;
     margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .foto-github {
     width: 20%;
     max-width: 25px;
     max-height: auto;
-    border: 1px solid #3f454b;
     border-radius: 50%;
     height: auto;
     margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.foto-whatsapp {
+    width: 20%;
+    max-width: 25px;
+    max-height: auto;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 main {
     float: left;
     width: 70%;
     padding: 2rem;
-    background-color: #0d1117; /* Fundo escuro para o conteúdo principal */
-    color: #c9d1d9; /* Texto claro */
+    background-color: #0d1117;
+    color: #c9d1d9;
 }
