@@ -11,8 +11,12 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+h1, p {
+    background-color: transparent;
+}
+
 header {
-    background-color: #161b22;
+    background-color: #15181d;
     border-bottom: 1px solid #30363d;
     padding: 1rem;
     text-align: center;
