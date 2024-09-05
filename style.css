@@ -126,22 +126,18 @@ main {
     color: #e1e1e1;
 }
 
-.sobre-mim {
+.info {
     margin-bottom: 2rem;
 }
 
-.habilidades {
-    margin-bottom: 2rem;
+.info h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.projetos {
-    margin-bottom: 2rem;
+.info p {
+    margin-bottom: 0.5rem;
+    text-indent: 1rem;
 }
 
-.experiencia {
-    margin-bottom: 2rem;
-}
-
-.educacao {
-    margin-bottom: 2rem;
-}
