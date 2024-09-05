@@ -62,8 +62,16 @@ aside p, aside a {
     margin-bottom: 1rem;
 }
 
+.email {
+    font-size: 1rem;
+    text-align: center;
+    color: #69a6ec;
+    text-decoration: none;
+    word-break: break-all;
+}
+
 .email:hover {
-    color: #fff;
+    color: #c9d1d9;
 }
 
 .foto-perfil {
@@ -86,16 +94,17 @@ aside p, aside a {
     align-items: center;
     width: 100%;
     justify-content: center;
-    gap: 1rem;
+    gap: 2vw;  
     background-color: transparent;
 }
 .sociais a {
     display: inline-block;
     background-color: transparent;
-    padding: 0.5rem;
 }
 
 .sociais a img {
+    max-width: 100%;
+    min-width: 10px;
     width: 25px;
     height: auto;
     border-radius: 50%;
