@@ -28,7 +28,7 @@ header {
     background-color: #161b22;
     border-bottom: 1px solid #30363d;
     color: #ffffff;
-    z-index: 20; /* Para que o header esteja acima do aside */
+    z-index: 20;
 }
 
 nav {
@@ -64,7 +64,7 @@ aside {
     min-height: 100vh;
     height: 100vh;
     overflow-y: auto;
-    z-index: 10; /* Coloca o aside acima do main */
+    z-index: 10;
 }
 
 aside p, aside a {    
