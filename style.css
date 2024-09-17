@@ -17,14 +17,18 @@ h1, p, a, nav {
 }
 
 /* Header */
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: left;
     padding: 1rem;
     background-color: #161b22;
     border-bottom: 1px solid #30363d;
     color: #ffffff;
+    z-index: 20; /* Para que o header esteja acima do aside */
 }
 
 nav {
@@ -46,15 +50,21 @@ nav a:hover {
 /* barra lateral */
 
 aside {
-    float: left;
-    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%; 
+    margin-top: 3rem;
     padding: 1rem;
     border-right: 1px solid #30363d;
     background-color: #161b22;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
     height: 100vh;
+    overflow-y: auto;
+    z-index: 10; /* Coloca o aside acima do main */
 }
 
 aside p, aside a {    
@@ -112,36 +122,35 @@ aside p, aside a {
 }
 
 .sociais a img:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
+     opacity: 1;
+     transform: scale(1.1);
+ }
 
-/* conteudo principal */
-
-main {
-    float: left;
-    width: 70%;
+ /* conteudo principal */
+ main {
+    margin-left: 25%;
+    margin-top: 2rem;
     padding: 2rem;
     background-color: #0d1117;
     color: #e1e1e1;
-}
+ }
 
-.info {
-    margin-bottom: 2rem;
-}
+ .info {
+     margin-bottom: 2rem;
+ }
 
-.info h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
+ .info h1 {
+     margin-bottom: 1rem;
+     font-size: 2rem;
+     font-weight: bold;
+ }
 
-.info p {
-    margin-bottom: 0.5rem;
-    text-indent: 1rem;
-}
+ .info p {
+     margin-bottom: 0.5rem;
+     text-indent: 1rem;
+ }
 
-.cargo { 
-    font-size: 1.2rem;
-    text-indent: 0.5rem !important;
-}
+ .cargo {
+     font-size: 1.2rem;
+     text-indent: 0.5rem !important;
+ }
