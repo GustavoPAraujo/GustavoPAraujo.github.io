@@ -154,3 +154,56 @@ aside p, aside a {
      font-size: 1.2rem;
      text-indent: 0.5rem !important;
  }
+
+
+ /* Ajuste delayout para telas menores */
+
+ @media (max-width: 500px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header {
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        padding: 0.3rem;
+        font-size: 0.9rem; 
+    }
+
+
+    aside {
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #30363d;
+        height: min-content;
+    }
+
+    .foto-perfil {
+        width: 30%;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 1rem;
+        padding: 1rem; 
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .sociais a img {
+        width: 20px;
+    }
+}
