@@ -91,7 +91,7 @@ aside p, aside a {
 .nome {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .sociais {
@@ -160,7 +160,8 @@ aside p, aside a {
     }
 
     header {
-        padding: 0.7rem;
+        position: relative;
+        padding: 0.5rem;
         flex-direction: column;
     }
 
@@ -168,7 +169,6 @@ aside p, aside a {
         margin-left: 0;
         margin-bottom: 0.5rem;
         padding: 0.3rem;
-        font-size: 1rem; 
     }
 
     aside {
@@ -177,6 +177,14 @@ aside p, aside a {
         border-right: none;
         border-bottom: 1px solid #30363d;
         height: 1vh;
+    }
+
+    .nome, .email {
+        font-size: 1rem;
+    }
+
+    aside p, aside a {
+        font-size: 0.8rem;
     }
 
     .foto-perfil {
