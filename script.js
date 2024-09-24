@@ -17,5 +17,4 @@ function adjustAsidePosition() {
 }
 
 window.addEventListener('load', adjustAsidePosition);
-
 window.addEventListener('resize', adjustAsidePosition);
