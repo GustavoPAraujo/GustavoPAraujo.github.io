@@ -1,40 +1,51 @@
-/* Estilo padrão */
-body {
-    max-width: 100vw;
-    min-height: 100vh;
-    font-family: Helvetica, Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #0d1117;
     color: #c9d1d9;
 }
 
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, p, a, nav {
+    background-color: transparent;
+}
+
+/* Header */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    align-items: left;
     padding: 1rem;
     background-color: #161b22;
     border-bottom: 1px solid #30363d;
+    color: #ffffff;
     z-index: 20;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 nav {
-    display: flex;
-    gap: 1rem;
+    margin-right: auto;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+    margin-left: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    text-decoration: none;
 }
 
 nav a:hover {
     background-color: #30363d;
+    color: #fff;
 }
 
 .menu-icon {
@@ -44,27 +55,180 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Barra lateral e conteúdo */
+/* barra lateral */
 aside {
     position: fixed;
     top: 0;
     left: 0;
-    width: 25%;
+    width: 25%; 
     padding: 1rem;
-    background-color: #161b22;
     border-right: 1px solid #30363d;
+    background-color: #161b22;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    z-index: 10;
 }
 
-main {
+aside p, aside a {    
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.email {
+    font-size: 1rem;
+    text-align: center;
+    color: #69a6ec;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.email:hover {
+    color: #c9d1d9;
+}
+
+.foto-perfil {
+    width: 60%;
+    border: 1px solid #3f454b;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.nome {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 2vw;  
+    background-color: transparent;
+}
+.sociais a {
+    display: inline-block;
+    background-color: transparent;
+}
+
+.sociais a img {
+    max-width: 100%;
+    min-width: 10px;
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.sociais a img:hover {
+     opacity: 1;
+     transform: scale(1.1);
+ }
+
+ /* conteudo principal */
+ main {
     margin-left: 25%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 2rem;
-}
+    background-color: #0d1117;
+    color: #e1e1e1;
+ }
 
-/* Estilos para dispositivos móveis */
+ .info {
+     margin-bottom: 2rem;
+ }
+
+ .info h1 {
+     margin-bottom: 1rem;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+ .info p {
+     margin-bottom: 0.5rem;
+     text-indent: 1rem;
+ }
+
+ .cargo {
+     font-size: 1.2rem;
+     text-indent: 0.5rem !important;
+ }
+
+
+ /* Ajuste delayout para telas menores */
+
+ @media (max-width: 500px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header {
+        position: relative;
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    aside {
+        width: 100%;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #30363d;
+        height: 1vh;
+    }
+
+    .nome, .email {
+        font-size: 1rem;
+    }
+
+    aside p, aside a {
+        font-size: 0.8rem;
+    }
+
+    .foto-perfil {
+        width: 30%;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 1rem;
+        padding: 1rem; 
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .sociais a img {
+        width: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+    
+}
+ 
+
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -89,7 +253,7 @@ main {
 
     /* Mostra o menu quando a classe 'active' for adicionada */
     nav.active {
-        display: flex;
+    display: flex;
     }
 
     aside {
