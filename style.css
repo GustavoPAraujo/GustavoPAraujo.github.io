@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +46,14 @@ nav a {
 nav a:hover {
     background-color: #30363d;
     color: #fff;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 /* barra lateral */
@@ -152,7 +161,6 @@ aside p, aside a {
  }
 
 
- /* Ajuste delayout para telas menores */
 
  @media (max-width: 500px) {
     body {
@@ -166,14 +174,34 @@ aside p, aside a {
     }
 
     nav {
-        display: flex;
+        display: none;
         flex-direction: column;
+        gap: 0;
+        background-color: #30363d;
+        opacity: 0.9;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        z-index: 10;
     }
 
     nav a {
-        margin-top: 10px;
+        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 0.3rem;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+    nav.active {
+        display: flex;
+    }
+    
+    .menu-icon {
+        display: block;
     }
 
     aside {
@@ -213,4 +241,5 @@ aside p, aside a {
     .sociais a img {
         width: 20px;
     }
+
 }
