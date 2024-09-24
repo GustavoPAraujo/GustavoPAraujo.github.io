@@ -13,6 +13,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 h1, p, a, nav {
     background-color: transparent;
 }
