@@ -53,6 +53,7 @@ nav a:hover {
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    background-color: transparent;
 }
 
 /* barra lateral */
@@ -160,7 +161,6 @@ aside p, aside a {
  }
 
 
- /* Ajuste delayout para telas menores */
 
  @media (max-width: 500px) {
     body {
@@ -174,14 +174,34 @@ aside p, aside a {
     }
 
     nav {
-        display: flex;
+        display: none;
         flex-direction: column;
+        gap: 0;
+        background-color: #30363d;
+        opacity: 0.9;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        z-index: 10;
     }
 
     nav a {
-        margin-top: 10px;
+        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 0.3rem;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+    nav.active {
+        display: flex;
+    }
+    
+    .menu-icon {
+        display: block;
     }
 
     aside {
@@ -222,48 +242,4 @@ aside p, aside a {
         width: 20px;
     }
 
-    nav.active {
-        display: flex;
-    }
-    
-}
- 
-
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        background-color: #161b22;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-    }
-
-    nav a {
-        padding: 1rem;
-        border-bottom: 1px solid #30363d;
-    }
-
-    /* Mostra o menu quando a classe 'active' for adicionada */
-    nav.active {
-    display: flex;
-    }
-
-    aside {
-        width: 100%;
-        position: relative;
-        border-right: none;
-        margin-top: 5rem;
-    }
-
-    main {
-        margin-left: 0;
-    }
 }
