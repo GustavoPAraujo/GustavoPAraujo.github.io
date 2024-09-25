@@ -144,8 +144,13 @@ aside p, aside a {
     color: #e1e1e1;
  }
 
+ .linkRepositorio {
+    color: #69a6ec;
+ }
+
  .info {
      margin-bottom: 2rem;
+     scroll-margin-top: 60px;
  }
 
  .info h1 {
