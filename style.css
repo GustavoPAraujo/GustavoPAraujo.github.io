@@ -209,6 +209,7 @@ aside p, aside a {
     
     .menu-icon {
         display: block;
+        width: fit-content;
     }
 
     aside {
